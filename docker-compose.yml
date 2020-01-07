@@ -12,8 +12,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: mysqldb
-#      MYSQL_USER: aurick
-#      MYSQL_PASSWORD: aurick
+      MYSQL_USER: aurick
+      MYSQL_PASSWORD: aurick
     networks:
       - mysql-network
 
