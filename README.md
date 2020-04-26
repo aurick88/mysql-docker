@@ -1,4 +1,4 @@
-# mariadb-docker
+# mysql-docker
 
 ##### Run container:
 ```shell script
