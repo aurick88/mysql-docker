@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   mysql:
@@ -16,7 +16,7 @@ services:
       MYSQL_USER: aurick
       MYSQL_PASSWORD: aurick
     networks:
-      - mysql-network
+      - mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
@@ -33,12 +33,12 @@ services:
 #      PMA_USER: aurick
 #      PMA_PASSWORD: aurick
     networks:
-      - mysql-network
+      - mysql
     depends_on:
       - mysql
 
 networks:
-  mysql-network:
+  mysql:
 
 volumes:
   mysql_data:
